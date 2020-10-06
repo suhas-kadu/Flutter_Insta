@@ -39,14 +39,14 @@ class _HomePageState extends State<HomePage> {
         child: Center(
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.grey[100],
+              color: Colors.white10,
             ),
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.all(8),
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 8),
-                  //padding: EdgeInsets.symmetric(horizontal: 2, vertical: 8),
+                  margin: EdgeInsets.symmetric(horizontal: 7),
+                  padding: EdgeInsets.symmetric(horizontal: 6, vertical: 8),
                   child: TextField(
                     decoration: InputDecoration(
                         border: OutlineInputBorder(),
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 RaisedButton(
                   child: Text("Print Details"),
-                  //elevation: 2,
+                  elevation: 2,
                   onPressed: () async {
                     setState(() {
                       pressed = true;
